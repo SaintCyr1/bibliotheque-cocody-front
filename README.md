@@ -1,10 +1,12 @@
 # BibliothequeCocody
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+Ce projet est une plateforme numérique permettant aux usagers d'emprunter des livres
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Pour démarrer le projet en environnement de développement, il suffit de faire la commande suivante:
+
+`ng serve --open`
 
 ## Code scaffolding
 
