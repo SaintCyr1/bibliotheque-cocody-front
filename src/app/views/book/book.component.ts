@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class BookComponent implements OnInit {
   books: Array<any>
+  p: number = 1;
   constructor(private router: Router) {
     this.books = [
       {

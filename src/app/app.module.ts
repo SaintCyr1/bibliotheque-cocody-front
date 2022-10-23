@@ -5,6 +5,7 @@ import {
   FaIconLibrary,
 } from '@fortawesome/angular-fontawesome';
 import { faSquare, faCheckSquare, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -48,7 +49,8 @@ import { BookItemComponent } from './views/book/book-item/book-item.component';
     FontAwesomeModule,
     NgbModule,
     LayoutModule,
-    FormsModule
+    FormsModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -19,8 +19,11 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 col-12 item" *ngFor="let book of books; let index = index">
+            <div class="col-md-3 col-12 item" *ngFor="let book of books | paginate: { itemsPerPage: 5, currentPage: p }; let index = index ">
                 <app-book-item [book]="book" [index]="index"></app-book-item>
+            </div>
+            <div class="col-md-12">
+                <pagination-controls (pageChange)="p = $event"></pagination-controls>
             </div>
         </div>
     </div>
