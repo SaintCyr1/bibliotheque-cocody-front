@@ -25,6 +25,7 @@ import { ErrorsComponent } from './views/errors/errors.component';
 import { ErrorPageComponent } from './views/error-page/error-page.component';
 import { BookDetailsComponent } from './views/book/book-details/book-details.component';
 import { BookItemComponent } from './views/book/book-item/book-item.component';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { BookItemComponent } from './views/book/book-item/book-item.component';
     NgbModule,
     LayoutModule,
     FormsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
