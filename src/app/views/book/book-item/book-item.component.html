@@ -1,0 +1,6 @@
+<div class="book-item">
+    <img src="assets/images/books/{{index+1}}.jpg" class="img-fluid" alt="">
+    <h5>{{ book.title }}</h5>
+    <p>{{ book.shortDescription }}</p>
+    <button class="btn btn-success w-100" (click)="showDetails(index)">Emprunter</button>
+</div>

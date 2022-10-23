@@ -1,1 +1,19 @@
-<p>login works!</p>
+<div class="authentication-page login">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-12">
+                <div class="authentication-form">
+                    <h3>Identifiez-vous</h3>
+                    <form (ngSubmit)="onSubmit()" #loginForm="ngForm" autocomplete="off">
+                        <input type="tel" [(ngModel)]="credentials.phoneNumber" name="phoneNumber" class="form-control" placeholder="Numéro de téléphone" required>
+                        <input type="password" [(ngModel)]="credentials.password" name="password" class="form-control" autocomplete="new-password" placeholder="Mot de passe" required>
+                        <button class="btn btn-primary" [disabled]="!loginForm.form.valid">Se connecter</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-7 col-12">
+                <img src="assets/images/login.png" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+</div>

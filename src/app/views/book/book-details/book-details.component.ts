@@ -1,14 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-book',
-  templateUrl: './book.component.html',
-  styleUrls: ['./book.component.sass']
+  selector: 'app-book-details',
+  templateUrl: './book-details.component.html',
+  styleUrls: ['./book-details.component.scss']
 })
-export class BookComponent implements OnInit {
+export class BookDetailsComponent implements OnInit {
   books: Array<any>
-  constructor(private router: Router) {
+  bookId: number | null = null;
+  book: any;
+  constructor(private route: ActivatedRoute) {
     this.books = [
       {
         title: "Mon super livre",
@@ -59,11 +61,9 @@ export class BookComponent implements OnInit {
   }
 
   ngOnInit(): void {
-  }
-
-  showDetails(index: number) {
-    console.log({ index })
-    this.router.navigate([`/livres/${index}`])
+    console.log('active route', this.route)
+    this.bookId = this.route.snapshot.params['id']
+    if (this.bookId) this.book = this.books.find((item, index) => this.bookId == index)
   }
 
 }

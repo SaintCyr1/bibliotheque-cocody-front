@@ -22,6 +22,8 @@ import { SearchBlockComponent } from './views/partials/search-block/search-block
 import { FormsModule } from '@angular/forms';
 import { ErrorsComponent } from './views/errors/errors.component';
 import { ErrorPageComponent } from './views/error-page/error-page.component';
+import { BookDetailsComponent } from './views/book/book-details/book-details.component';
+import { BookItemComponent } from './views/book/book-item/book-item.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { ErrorPageComponent } from './views/error-page/error-page.component';
     LatestBookComponent,
     SearchBlockComponent,
     ErrorsComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    BookDetailsComponent,
+    BookItemComponent
   ],
   imports: [
     BrowserModule,

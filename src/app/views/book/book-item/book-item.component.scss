@@ -1,0 +1,9 @@
+.book-item{
+    margin-bottom: 2rem;
+    cursor: pointer;
+    img{
+        height: 350px;
+        width: 100%;
+        object-fit: cover;
+    }
+}

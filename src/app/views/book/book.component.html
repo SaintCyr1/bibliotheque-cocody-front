@@ -1,1 +1,27 @@
-<p>book works!</p>
+<div class="container">
+    <div class="row py-3">
+        <div class="col-md-12">
+            <h3>Rechercher un livre</h3>
+            <app-search-block></app-search-block>
+        </div>
+    </div>
+    <hr />
+    <div class="book-listing">
+        <div class="filter pb-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <span>Trier: </span>
+                    <select name="" id="">
+                        <option value="asc" selected>A-Z</option>
+                        <option value="desc">Z-A</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-12 item" *ngFor="let book of books; let index = index">
+                <app-book-item [book]="book" [index]="index"></app-book-item>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,21 @@
-<p>register works!</p>
+<div class="authentication-page register">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-12">
+                <div class="authentication-form">
+                    <h3>Inscription</h3>
+                    <form (ngSubmit)="onSubmit()" #registerForm="ngForm" autocomplete="off">
+                        <input type="text" [(ngModel)]="user.fullname" name="fullname" class="form-control" placeholder="Nom et Prénom(s)" required>
+                        <input type="email" [(ngModel)]="user.emailAddress" name="email" class="form-control" placeholder="Adresse email" required>
+                        <input type="tel" [(ngModel)]="user.phoneNumber" name="phoneNumber" class="form-control" placeholder="Numéro de téléphone" required>
+                        <input type="password" [(ngModel)]="user.password" name="password" class="form-control" autocomplete="new-password" placeholder="Mot de passe" required>
+                        <button class="btn btn-primary" [disabled]="!registerForm.form.valid">Créer mon compte</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-7 col-12">
+                <img src="assets/images/signin.png" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+</div>
