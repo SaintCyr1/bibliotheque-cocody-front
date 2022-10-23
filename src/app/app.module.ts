@@ -1,5 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {
+  FontAwesomeModule,
+  FaIconLibrary,
+} from '@fortawesome/angular-fontawesome';
+import { faSquare, faCheckSquare, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,10 +34,19 @@ import { LatestBookComponent } from './views/partials/latest-book/latest-book.co
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FontAwesomeModule,
     NgbModule,
-    LayoutModule
+    LayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(library: FaIconLibrary) {
+    library.addIcons(
+      faSquare,
+      faCheckSquare,
+      faMagnifyingGlass
+    );
+  }
+}
