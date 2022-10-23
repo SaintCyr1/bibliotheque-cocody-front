@@ -18,6 +18,7 @@ import { RegisterComponent } from './views/authentication/register/register.comp
 import { LayoutModule } from './views/layout/layout.module';
 import { HomeBannerComponent } from './views/partials/home-banner/home-banner.component';
 import { LatestBookComponent } from './views/partials/latest-book/latest-book.component';
+import { SearchBlockComponent } from './views/partials/search-block/search-block.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { LatestBookComponent } from './views/partials/latest-book/latest-book.co
     LoginComponent,
     RegisterComponent,
     HomeBannerComponent,
-    LatestBookComponent
+    LatestBookComponent,
+    SearchBlockComponent
   ],
   imports: [
     BrowserModule,
