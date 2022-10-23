@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './views/authentication/login/login.component';
 import { RegisterComponent } from './views/authentication/register/register.component';
 import { BookComponent } from './views/book/book.component';
-import { PageNotFoundComponent } from './views/errors/page-not-found/page-not-found.component';
+import { ErrorPageComponent } from './views/error-page/error-page.component';
 import { HomeComponent } from './views/home/home.component';
 import { BaseComponent } from './views/layout/base/base.component';
 
@@ -30,7 +30,7 @@ const routes: Routes = [
       }
     ]
   },
-  { path: '**', component: PageNotFoundComponent }
+  { path: '**', component: ErrorPageComponent }
 ];
 
 @NgModule({

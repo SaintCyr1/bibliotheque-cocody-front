@@ -20,6 +20,8 @@ import { HomeBannerComponent } from './views/partials/home-banner/home-banner.co
 import { LatestBookComponent } from './views/partials/latest-book/latest-book.component';
 import { SearchBlockComponent } from './views/partials/search-block/search-block.component';
 import { FormsModule } from '@angular/forms';
+import { ErrorsComponent } from './views/errors/errors.component';
+import { ErrorPageComponent } from './views/error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { FormsModule } from '@angular/forms';
     RegisterComponent,
     HomeBannerComponent,
     LatestBookComponent,
-    SearchBlockComponent
+    SearchBlockComponent,
+    ErrorsComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
