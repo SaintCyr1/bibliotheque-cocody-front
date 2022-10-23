@@ -1,4 +1,15 @@
 .search-block{
     position: relative;
-    height: 50px;
+    input[type=search]{
+        height: 60px;
+        padding-right: 60px;
+    }
+
+    .btn-search{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 60px;
+    }
 }

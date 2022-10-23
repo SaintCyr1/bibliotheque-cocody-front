@@ -19,6 +19,7 @@ import { LayoutModule } from './views/layout/layout.module';
 import { HomeBannerComponent } from './views/partials/home-banner/home-banner.component';
 import { LatestBookComponent } from './views/partials/latest-book/latest-book.component';
 import { SearchBlockComponent } from './views/partials/search-block/search-block.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { SearchBlockComponent } from './views/partials/search-block/search-block
     FontAwesomeModule,
     NgbModule,
     LayoutModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

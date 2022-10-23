@@ -1,4 +1,4 @@
 <div class="search-block">
-    <input type="search" class="form-control" placeholder="Entrez un mot clé pour rechercher">
-    <button type="button" class="btn"><fa-icon [icon]="['fas', 'magnifying-glass']"></fa-icon></button>
+    <input type="search" [(ngModel)]="searchKeyword" class="form-control" placeholder="Entrez un mot clé pour rechercher">
+    <button type="button" class="btn btn-search"><fa-icon [icon]="['fas', 'magnifying-glass']" (click)="search()"></fa-icon></button>
 </div>

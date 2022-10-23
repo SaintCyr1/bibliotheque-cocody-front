@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-block.component.scss']
 })
 export class SearchBlockComponent implements OnInit {
-
+  searchKeyword: string = ''
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  search() {
+    console.log('searck keyword: ', this.searchKeyword)
   }
 
 }
