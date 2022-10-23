@@ -4,15 +4,33 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HomeComponent } from './views/home/home.component';
+import { PageNotFoundComponent } from './views/errors/page-not-found/page-not-found.component';
+import { BookComponent } from './views/book/book.component';
+import { AboutComponent } from './views/about/about.component';
+import { LoginComponent } from './views/authentication/login/login.component';
+import { RegisterComponent } from './views/authentication/register/register.component';
+import { LayoutModule } from './views/layout/layout.module';
+import { HomeBannerComponent } from './views/partials/home-banner/home-banner.component';
+import { LatestBookComponent } from './views/partials/latest-book/latest-book.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    PageNotFoundComponent,
+    BookComponent,
+    AboutComponent,
+    LoginComponent,
+    RegisterComponent,
+    HomeBannerComponent,
+    LatestBookComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
